@@ -1,4 +1,4 @@
-docker-test-rails
+dockerized_rails_sample
 =================
 
-Sample Rails project to test docker workflow
+Dockerized Rails sample
