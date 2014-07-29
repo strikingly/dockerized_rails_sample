@@ -19,10 +19,10 @@ RUN /bin/bash -l -c "bundle install"
 # Add configuration files in repository to filesystem
 ADD config/docker/start_web /usr/bin/strikingly/dockerized_rails_sample/start_web
 RUN chmod +x /usr/bin/strikingly/dockerized_rails_sample/start_web
-ADD config/docker/start_worker /usr/bin/strikingly/dockerized_rails_sample/start_worker
-RUN chmod +x /usr/bin/strikingly/dockerized_rails_sample/start_worker
-ADD config/docker/start_clock /usr/bin/strikingly/dockerized_rails_sample/start_clock
-RUN chmod +x /usr/bin/strikingly/dockerized_rails_sample/start_clock
+# ADD config/docker/start_worker /usr/bin/strikingly/dockerized_rails_sample/start_worker
+# RUN chmod +x /usr/bin/strikingly/dockerized_rails_sample/start_worker
+# ADD config/docker/start_clock /usr/bin/strikingly/dockerized_rails_sample/start_clock
+# RUN chmod +x /usr/bin/strikingly/dockerized_rails_sample/start_clock
 
 # Add rails project to project directory
 ADD ./ /strikingly/dockerized_rails_sample
