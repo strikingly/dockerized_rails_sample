@@ -1,0 +1,5 @@
+#!/bin/bash
+/bin/echo "[program:bobcat_web]" >> /etc/supervisord.conf
+/bin/echo "command=/bin/bash -c \"source /etc/profile.d/rvm.sh && cd /strikingly/bobcat && exec bundle exec unicorn -p 80 -c ./config/unicorn.rb\"" >> /etc/supervisord.conf
+/etc/init.d/syslog-ng start
+/usr/bin/supervisord -c /etc/supervisord.conf
