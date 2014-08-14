@@ -20,8 +20,12 @@ RUN /bin/bash -l -c "bundle install"
 ADD config/docker/start_web /usr/bin/strikingly/dockerized_rails_sample/start_web
 RUN chmod +x /usr/bin/strikingly/dockerized_rails_sample/start_web
 
+ADD config/docker/start_run /usr/bin/strikingly/dockerized_rails_sample/start_run
+RUN chmod +x /usr/bin/strikingly/dockerized_rails_sample/start_run
+
 ADD config/docker/init_web /usr/bin/strikingly/dockerized_rails_sample/init_web
 RUN chmod +x /usr/bin/strikingly/dockerized_rails_sample/init_web
+
 
 
 # Add rails project to project directory
