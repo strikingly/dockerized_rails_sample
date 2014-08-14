@@ -1,5 +1,4 @@
 #!/bin/bash
 /bin/echo "[program:rails_example]" >> /etc/supervisord.conf
-# /bin/echo "command=/bin/bash -c \"source /etc/profile.d/rvm.sh && cd /strikingly/dockerized_rails_sample && exec bundle exec unicorn -p 80 -c ./config/unicorn.rb\"" >> /etc/supervisord.conf
 /bin/echo "command=//usr/bin/strikingly/dockerized_rails_sample/start_web" >> /etc/supervisord.conf
 /sbin/rsyslogd && /usr/bin/supervisord -c /etc/supervisord.conf

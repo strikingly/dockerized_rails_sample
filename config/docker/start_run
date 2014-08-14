@@ -1,0 +1,2 @@
+#!/bin/bash
+cd /strikingly/dockerized_rails_sample && source /etc/profile.d/rvm.sh && $*
