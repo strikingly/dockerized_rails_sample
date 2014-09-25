@@ -1,4 +1,5 @@
 DockerizedRailsSample::Application.routes.draw do
+  match 'heartbeat', to: proc { [200, {}, '1'.chars]}
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
