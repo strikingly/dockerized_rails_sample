@@ -1,10 +1,4 @@
 #!/bin/bash
-/bin/echo "[program:rails_example]" >> /etc/supervisord.conf
-/bin/echo "command=//usr/bin/strikingly/dockerized_rails_sample/start_web" >> /etc/supervisord.conf
-/sbin/rsyslogd && /usr/bin/supervisord -c /etc/supervisord.conf
-
-
-#!/bin/bash
 if [ -f '/etc/supervisord.conf' ]; then
   rm /etc/supervisord.conf
 fi
